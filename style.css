@@ -1,0 +1,259 @@
+@font-face {
+  font-family: "Hoefler";
+  src: url("res/Hoefler Text Regular.ttf");
+}
+
+* {
+  color: white;
+  font-family: "Hoefler";
+  text-align: justify;
+  /* recommand to change from "left" */
+}
+
+body {
+  margin: 0;
+  background-color: rgb(27, 10, 52);
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+img[id^="cons"] {
+  max-height: 10em;
+}
+
+h1 {
+  font-weight: normal;
+  font-size: 4.5em;
+  margin-block-start: 0;
+  margin-block-end: -0.19em;
+}
+
+h1,
+span {
+  /** blurred shadow around text */
+  text-shadow: 0 0 8px white;
+}
+
+hr {
+  /* Change the style of a rectangle to a line. */
+  border: none;
+  height: 1px;
+  background-color: white;
+}
+
+button {
+  color: black;
+  font-size: large;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition-duration: 1s;
+}
+
+.background {
+  overflow: auto;
+  max-height: 100vh;
+  background-image: url("img/background.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-color: rgb(27, 10, 52);
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.info {
+  width: 50%;
+  /* recommand to change from "30%" */
+  padding-left: 4%;
+  display: none;
+}
+
+[class="info"][id="home"] {
+  display: block;
+  /* Overwrite .info display none to show it up in the biginning. */
+}
+
+.normal-text {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-size: large;
+  /* recommand to change from "small" */
+}
+
+.home-star-container {
+  position: fixed;
+  right: 0;
+  padding-right: 2%;
+  margin-top: 4%;
+  align-items: center;
+  justify-content: right;
+  display: none;
+  opacity: 0.75;
+}
+
+.home-star-container>div {
+  transition: 0.4s;
+}
+
+.home-star {
+  margin-top: 4%;
+  padding-left: 0;
+  margin-top: inherit;
+  float: right;
+  height: 1.2em;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+div.home-star-container:hover {
+  height: 1.25em;
+  font-size: 1.25em;
+  opacity: 1;
+}
+
+#rocket {
+  position: fixed;
+  margin-left: 58vw;
+  margin-top: 1vh;
+  height: 40%;
+}
+
+
+/* the pages of the 12 constellations */
+
+img[id^="cons"] {
+  margin-top: 5vh;
+}
+
+
+/* hard-coded 12 stars on the home page*/
+
+.zodiac-main-container {
+  width: 50%;
+  margin-top: 4%;
+  padding-left: 4%;
+}
+
+td {
+  border-spacing: 0;
+  width: 25%;
+  text-align: left;
+  vertical-align: top;
+}
+
+img[id^="star"] {
+  object-fit: contain;
+  opacity: 60%;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+img[id^="star"]:hover {
+  opacity: 100%;
+}
+
+img[id^="star"]+p {
+  margin-top: -5%;
+  margin-bottom: -5%;
+  opacity: 0;
+  transition: 0.4s;
+  cursor: default;
+}
+
+img#star1+p,
+img#star2+p,
+img#star10+p {
+  margin-left: -5%;
+}
+
+img#star4+p,
+img#star5+p,
+img#star11+p,
+img#star12+p {
+  margin-left: 25%;
+}
+
+img#star6+p {
+  margin-left: 45%;
+}
+
+img#star7+p,
+img#star8+p {
+  margin-left: 70%;
+}
+
+img[id^="star"]:hover+p {
+  /* name of a star*/
+  opacity: 100%
+}
+
+img[src="img/star-large-white.png"] {
+  height: 30px;
+}
+
+img[src="img/star-small.png"] {
+  height: 22px;
+}
+
+img[src="img/star-large-blue.png"] {
+  height: 28px;
+}
+
+img#star1 {
+  margin: 4% 0 0 3%;
+}
+
+img#star2 {
+  margin: 30% 0 0 1%;
+}
+
+img#star3 {
+  margin: 2% 0 0 2%;
+}
+
+img#star4 {
+  margin: 0% 0 0 31%;
+}
+
+img#star5 {
+  margin: 25% 0 0 36%;
+}
+
+img#star6 {
+  margin: 20% 0 0 49%;
+}
+
+img#star7 {
+  margin: 0% 0 0 69%;
+}
+
+img#star8 {
+  margin: 0% 0 0 81%;
+}
+
+img#star9 {
+  margin: 60% 0 0 5%;
+}
+
+img#star10 {
+  margin: 35% 0 0 0;
+}
+
+img#star11 {
+  margin: 10% 0 0 40%;
+}
+
+img#star12 {
+  margin: 0in 0 0 36%;
+}
+
+
+/*
+footer { 
+  text-align: center;
+}*/

@@ -102,3 +102,13 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Local temporiry files
+temp/
+
+# Local utilities
+*.cmd
+*url
+
+# Google drive
+desktop.ini
