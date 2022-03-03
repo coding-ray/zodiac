@@ -118,9 +118,9 @@ div.home-star-container:hover {
 
 #rocket {
   position: fixed;
-  margin-left: 58vw;
-  margin-top: 1vh;
-  height: 40%;
+  left: 58vw;
+  bottom: 0;
+  height: 40vh;
 }
 
 
