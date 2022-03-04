@@ -32,6 +32,7 @@ h1 {
 }
 
 h1,
+p,
 span {
   /** blurred shadow around text */
   text-shadow: 0 0 8px white;
