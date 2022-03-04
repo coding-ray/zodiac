@@ -1,3 +1,7 @@
+/******************
+ * General styles *
+ ******************/
+
 @font-face {
   font-family: "Hoefler";
   src: url("res/Hoefler Text Regular.ttf");
@@ -20,6 +24,34 @@ img {
   max-height: 100%;
 }
 
+h1,
+p,
+span {
+  /** blurred shadow around text */
+  text-shadow: 0 0 8px white;
+}
+
+
+/**********************************
+ * Contents on the righthand side *
+ **********************************/
+
+.main-container {
+  max-height: 100vh;
+}
+
+.info {
+  width: 50%;
+  /* recommand to change from "30%" */
+  padding-left: 4%;
+  display: none;
+}
+
+.info#home {
+  display: block;
+  /* Overwrite .info display none to show it up in the biginning. */
+}
+
 img[id^="cons"] {
   max-height: 10em;
 }
@@ -31,18 +63,18 @@ h1 {
   margin-block-end: -0.19em;
 }
 
-h1,
-p,
-span {
-  /** blurred shadow around text */
-  text-shadow: 0 0 8px white;
-}
-
 hr {
   /* Change the style of a rectangle to a line. */
   border: none;
   height: 1px;
   background-color: white;
+}
+
+.normal-text {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-size: large;
+  /* recommand to change from "small" */
 }
 
 button {
@@ -54,52 +86,10 @@ button {
   transition-duration: 1s;
 }
 
-.main-container {
-  max-height: 100vh;
-}
 
-#background {
-  height: 100%;
-  /* cannot be 100% for protrait view */
-  width: max-content;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-}
-
-#solar {
-  background-repeat: no-repeat;
-  position: relative;
-  max-width: 100%;
-  max-height: 100%;
-}
-
-#rocket {
-  position: fixed;
-  left: 58vw;
-  bottom: 0;
-  height: 40vh;
-}
-
-.info {
-  width: 50%;
-  /* recommand to change from "30%" */
-  padding-left: 4%;
-  display: none;
-}
-
-[class="info"][id="home"] {
-  display: block;
-  /* Overwrite .info display none to show it up in the biginning. */
-}
-
-.normal-text {
-  margin-block-start: 0;
-  margin-block-end: 0;
-  font-size: large;
-  /* recommand to change from "small" */
-}
+/***************************************
+ * Home star (on the top right corner) *
+ ***************************************/
 
 .home-star-container {
   position: fixed;
@@ -133,14 +123,47 @@ div.home-star-container:hover {
 }
 
 
-/* the pages of the 12 constellations */
+/*********************************************
+ * Background images (on the left or bottom) *
+ *********************************************/
+
+#background {
+  height: 100%;
+  /* cannot be 100% for protrait view */
+  width: max-content;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+#solar {
+  background-repeat: no-repeat;
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#rocket {
+  position: fixed;
+  left: 58vw;
+  bottom: 0;
+  height: 40vh;
+}
+
+
+/**************************************
+ * The pages of the 12 constellations *
+ **************************************/
 
 img[id^="cons"] {
   margin-top: 5vh;
 }
 
 
-/* hard-coded 12 stars on the home page*/
+/****************************************
+ * Hard-coded 12 stars on the home page *
+ ****************************************/
 
 .zodiac-main-container {
   width: 50vw;
@@ -260,9 +283,3 @@ img#star11 {
 img#star12 {
   margin: 0in 0 0 36%;
 }
-
-
-/*
-footer { 
-  text-align: center;
-}*/
