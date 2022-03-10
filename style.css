@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: "Hoefler";
-  src: url("res/Hoefler Text Regular.ttf");
+  src: url("res/Hoefler-Text.ttf");
 }
 
 * {
@@ -145,9 +145,11 @@ div.home-star-container:hover {
 
 #rocket {
   position: fixed;
-  right: 11vw;
-  bottom: 0;
-  height: 40vh;
+  right: -16.5%;
+  top: 67vh;
+  height: 155%;
+  max-height: unset;
+  max-width: unset;
 }
 
 
