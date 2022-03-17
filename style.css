@@ -41,7 +41,7 @@ span {
 }
 
 .info {
-  width: 50%;
+  width: 55%;
   /* recommand to change from "30%" */
   padding-left: 4%;
   display: none;
@@ -53,7 +53,7 @@ span {
 }
 
 img[id^="cons"] {
-  max-height: 10em;
+  max-height: 15em;
 }
 
 h1 {
@@ -73,13 +73,13 @@ hr {
 .normal-text {
   margin-block-start: 0;
   margin-block-end: 0;
-  font-size: large;
+  font-size: medium;
   /* recommand to change from "small" */
 }
 
 #take-a-view {
   color: black;
-  font-size: large;
+  font-size: medium;
   border: none;
   border-radius: 10px;
   cursor: pointer;
