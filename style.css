@@ -232,50 +232,6 @@ div.home-star-container:hover {
 }
 
 
-/* 
-@keyframes rocket-rotation {
-  0% {
-    right: -75%;
-    top: 67vh;
-  }
-  12.5% {
-    right: -60.5%;
-    top: 50vh;
-    transform: rotate(15deg);
-  }
-  25% {
-    right: -47%;
-    top: 26vh;
-    transform: rotate(30deg);
-  }
-  37.5% {
-    right: -36%;
-    top: -6vh;
-    transform: rotate(45deg);
-  }
-  50% {
-    right: -30%;
-    top: -44vh;
-    transform: rotate(60deg);
-  }
-  62.5% {
-    right: -31%;
-    top: -87vh;
-    transform: rotate(75deg);
-  }
-  75% {
-    right: -36%;
-    top: -128vh;
-    transform: rotate(90deg);
-  }
-  100% {
-    right: -75%;
-    top: -128vh;
-    transform: rotate(90deg);
-  }
-}*/
-
-
 /**************************************
  * The pages of the 12 constellations *
  **************************************/
