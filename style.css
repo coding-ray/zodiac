@@ -77,13 +77,12 @@ hr {
   /* recommand to change from "small" */
 }
 
-button {
+#take-a-view {
   color: black;
   font-size: large;
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  transition-duration: 1s;
 }
 
 
@@ -133,7 +132,6 @@ div.home-star-container:hover {
   position: absolute;
   right: 0;
   bottom: 0;
-  z-index: -1;
 }
 
 #solar {
@@ -141,16 +139,141 @@ div.home-star-container:hover {
   position: fixed;
   height: 100vh;
   right: 0;
+  z-index: -1;
 }
 
 #rocket {
   position: fixed;
-  right: -16.5%;
+  right: -75%;
   top: 67vh;
-  height: 155%;
+  height: 330%;
   max-height: unset;
   max-width: unset;
+  z-index: -1;
 }
+
+.rocket-rotation {
+  animation: rocket-rotation 2.5s cubic-bezier(0.41, 0.33, 0.71, 0.64) forwards;
+}
+
+@keyframes rocket-rotation {
+  0% {
+    right: -75%;
+    top: 67vh;
+  }
+  6% {
+    right: -65.5%;
+    top: 60vh;
+    transform: rotate(9deg);
+  }
+  12% {
+    right: -56.5%;
+    top: 49vh;
+    transform: rotate(18deg);
+  }
+  18% {
+    right: -48.5%;
+    top: 34vh;
+    transform: rotate(27deg);
+  }
+  24% {
+    right: -41%;
+    top: 17vh;
+    transform: rotate(36deg);
+  }
+  30% {
+    right: -35%;
+    top: -3vh;
+    transform: rotate(45deg);
+  }
+  36% {
+    right: -31.5%;
+    top: -27vh;
+    transform: rotate(54deg);
+  }
+  42% {
+    right: -30%;
+    top: -53vh;
+    transform: rotate(63deg);
+  }
+  48% {
+    right: -30%;
+    top: -79vh;
+    transform: rotate(72deg);
+  }
+  54% {
+    right: -33%;
+    top: -104vh;
+    transform: rotate(81deg);
+  }
+  60% {
+    right: -36%;
+    top: -128vh;
+    transform: rotate(90deg);
+  }
+  100% {
+    right: -75%;
+    top: -128vh;
+    transform: rotate(90deg);
+  }
+}
+
+.rocket-move-up {
+  animation: rocket-move-up 800ms linear forwards;
+}
+
+@keyframes rocket-move-up {
+  from {
+    top: 100vh;
+  }
+  to {
+    top: 67vh;
+  }
+}
+
+
+/* 
+@keyframes rocket-rotation {
+  0% {
+    right: -75%;
+    top: 67vh;
+  }
+  12.5% {
+    right: -60.5%;
+    top: 50vh;
+    transform: rotate(15deg);
+  }
+  25% {
+    right: -47%;
+    top: 26vh;
+    transform: rotate(30deg);
+  }
+  37.5% {
+    right: -36%;
+    top: -6vh;
+    transform: rotate(45deg);
+  }
+  50% {
+    right: -30%;
+    top: -44vh;
+    transform: rotate(60deg);
+  }
+  62.5% {
+    right: -31%;
+    top: -87vh;
+    transform: rotate(75deg);
+  }
+  75% {
+    right: -36%;
+    top: -128vh;
+    transform: rotate(90deg);
+  }
+  100% {
+    right: -75%;
+    top: -128vh;
+    transform: rotate(90deg);
+  }
+}*/
 
 
 /**************************************
